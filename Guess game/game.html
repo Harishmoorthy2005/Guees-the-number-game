@@ -1,0 +1,38 @@
+<link rel="Stylesheet" href="gamecs.css">
+    <title>GAME</title>
+<body>  
+   
+    <table>'
+       
+   <tr><td><h2> GUESS THE NUMBER</h2></td></tr> 
+    
+        <tr>
+     <td><input  id = "gnum"></td>
+   <td> <Button onclick="check()" > Check</Button></td>
+    </tr>
+    <tr><td><p id="para"> Your are right/wrong</p></td></tr>
+   
+    <tr><td><p id="sc"> SCORE:10</p></td></tr>
+    </table>
+</body>
+<script>
+    var gnumer=document.getElementById("gnum")
+    var result=document.getElementById("para")
+    var score = document.getElementById("sc")
+    var rnum=Math.floor(Math.random()*10)+1
+    var tscore=10
+    function check(){
+        var enumber=gnumer.value
+        if(rnum == enumber){
+            result.textContent="You are right"
+            alert("You won..")
+        
+        }
+        else{
+            tscore--
+            score.textContent="SCORE : "+tscore
+            result.textContent="You are wrong"
+
+        }
+    }
+</script>

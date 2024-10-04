@@ -1,0 +1,45 @@
+
+*{
+    font-family: sans-serif;
+    }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(sunnyday.png);
+}
+h2{
+    text-align: center;
+}
+table{
+    height: 25rem;
+    width: 28rem;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(38, 44, 139, 0.37);
+   border-radius: 30px;
+   }
+input{
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 8%;
+   background: transparent;
+  color: #00FFFF;
+  border-radius: 30px;
+}
+button{  
+ 
+    color: #00FFFF;
+ 
+    outline: none;
+   
+    font-size: 15px;
+    background:transparent;
+    padding: 10px 30px;
+    opacity: .7;
+    border-radius: 10px;
+}
+p{
+    font-size: medium;
+    font-style: italic;
+}
